@@ -5,9 +5,10 @@ FROM maven:3.5-jdk-8-alpine as builder
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
+COPY target/user-center-0.0.1-SNAPSHOT.jar user-center-0.0.1-SNAPSHOT.jar
 
 # Build a release artifact.
-RUN mvn package
+# RUN mvn package
 
 # Run the web service on container startup.
-CMD ["java","-jar","/app/target/user-center-0.0.1-SNAPSHOT.jar","--spring.profiles.active=prod"]
+CMD ["java","-jar","user-center-0.0.1-SNAPSHOT.jar"]
