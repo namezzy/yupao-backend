@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rm-2zebh9l67e2e8a59t1o.mysql.rds.aliyuncs.com/usercenter
+    username: withlevi
+    password: iBJ@2022
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
