@@ -92,7 +92,7 @@ public class UsersServiceTest {
 
     @Test
     public void testRegister(){
-        String userAccount = "levizhao1";
+        String userAccount = "levizhao2";
         String userPassword = "admin@123456";
         String checkPassword = "admin@123456";
         String planetCode = "62";
