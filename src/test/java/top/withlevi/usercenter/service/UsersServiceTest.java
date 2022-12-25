@@ -1,7 +1,10 @@
 package top.withlevi.usercenter.service;
 
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -89,10 +92,10 @@ public class UsersServiceTest {
 
     @Test
     public void testRegister(){
-        String userAccount = "levizhao";
+        String userAccount = "levizhao1";
         String userPassword = "admin@123456";
         String checkPassword = "admin@123456";
-        String planetCode = "66";
+        String planetCode = "62";
 
         long result = usersService.userRegister(userAccount, userPassword, checkPassword, planetCode);
         if (result == -1){
@@ -103,4 +106,28 @@ public class UsersServiceTest {
         }
     }
 
+//    @Test
+//    public void searchUsersByTags() {
+//        List<String> tagNameList = Arrays.asList("Java","Python");
+//        List<Users> usersList = usersService.searchUsersByTags(tagNameList);
+//        Assert.assertNotNull(usersList);
+//    }
+
+    @Test
+    public void searchUsersByTagsByMethod01() {
+
+        List<String> tagNameList = Arrays.asList("Java","Python");
+        List<Users> usersList01 = usersService.searchUsersByTagsByMethod01(tagNameList);
+        //List<Users> usersList02 = usersService.searchUsersByTagsByMethod02(tagNameList);
+        Assert.assertNotNull(usersList01);
+        //Assert.assertNotNull(usersList02);
+    }
+
+    @Test
+    public void searchUsersByTagsByMethod02() {
+
+        List<String> tagNameList = Arrays.asList("Java","Python");
+        List<Users> usersList = usersService.searchUsersByTagsByMethod02(tagNameList);
+        Assert.assertNotNull(usersList);
+    }
 }

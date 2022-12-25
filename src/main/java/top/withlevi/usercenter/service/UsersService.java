@@ -1,10 +1,10 @@
 package top.withlevi.usercenter.service;
 
-import org.apache.catalina.User;
 import top.withlevi.usercenter.model.domain.Users;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
 * @author Dongxiao.Wang
@@ -49,4 +49,27 @@ public interface UsersService extends IService<Users> {
      * @return int
      */
     int userLogout(HttpServletRequest request);
+
+    /**
+     * 根据标签搜索用户
+     *
+     * @param tagNameList
+     * @return
+     */
+//    List<Users> searchUsersByTags(List<String> tagNameList);
+
+    /**
+     * 根据标签搜索用户-常规SQL查询
+     *
+     * @param tagNameList
+     * @return
+     */
+    List<Users> searchUsersByTagsByMethod01(List<String> tagNameList);
+
+    /**
+     * 根据标签搜索用户-在内存中进行查询
+     * @param tagNameList
+     * @return
+     */
+    List<Users> searchUsersByTagsByMethod02(List<String> tagNameList);
 }

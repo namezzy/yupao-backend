@@ -4,6 +4,7 @@ top\withlevi\usercenter\common\BaseResponse.class
 top\withlevi\usercenter\mapper\UsersMapper.class
 top\withlevi\usercenter\UserCenterApplication.class
 top\withlevi\usercenter\model\domain\Users.class
+top\withlevi\usercenter\config\WebMvcConfig.class
 top\withlevi\usercenter\exception\GlobalExceptionHandle.class
 top\withlevi\usercenter\model\request\UserRegisterRequest.class
 top\withlevi\usercenter\common\ResultUtil.class

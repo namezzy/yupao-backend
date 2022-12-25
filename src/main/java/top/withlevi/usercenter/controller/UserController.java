@@ -30,6 +30,7 @@ import static top.withlevi.usercenter.constant.UserConstant.USER_LOGIN_STATE;
 
 @RestController
 @RequestMapping("/user")
+//@CrossOrigin(origins = {"http://localhost:8001","http://localhost:8000","https://usercenter.withlevi.top","https://usercenter-backend-23817-6-1312392508.sh.run.tcloudbase.com"},allowCredentials = "true",allowedHeaders ="*", methods = {RequestMethod.GET,RequestMethod.POST,RequestMethod.DELETE,RequestMethod.PUT})
 public class UserController {
 
     @Resource

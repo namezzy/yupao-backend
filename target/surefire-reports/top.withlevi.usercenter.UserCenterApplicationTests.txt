@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: top.withlevi.usercenter.UserCenterApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.008 s - in top.withlevi.usercenter.UserCenterApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.08 s - in top.withlevi.usercenter.UserCenterApplicationTests
